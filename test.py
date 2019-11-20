@@ -134,3 +134,38 @@ day03--分支结构
 # print('f(%.2f) = %.2f' % (x, y))
 
 # ex1:英寸和厘米转换
+# value = float(input('请输入长度：'))
+# unit = input('请输入单位：')
+# if unit == 'in' or unit == '英寸':
+#     print('%f英寸 = %f厘米' % (value, value * 2.54))
+# elif unit == 'cm' or unit == '厘米':
+#     print('%f英寸 = %f厘米' % (value, value / 2.54))
+# else:
+#     print('请输入正确的单位')
+
+# ex2:百分制转换为等级制
+# score = float(input('请输入成绩：'))
+# if score >= 90:
+#     grade = 'A'
+# elif score >= 80:
+#     grade = 'B'
+# elif score >= 70:
+#     grade = 'C'
+# elif score >= 60:
+#     grade = 'D'
+# else:
+#     grade = 'E'
+# print('对应的等级是：', grade)
+
+# ex3:计算三角形的周长和面积
+# a = float(input('a = '))
+# b = float(input('b = '))
+# c = float(input('c = '))
+# if a + b > c and a + c > b and b + c > a:
+#     print('周长：%f' % (a + b + c))
+#     p = (a + b + c) / 2
+#     area = (p * (p - a) * (p - b) * (p - c)) ** 0.5
+#     print('面积：%f' % (area))
+# else:
+#     print('不能构成三角形')
+
