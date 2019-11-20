@@ -98,7 +98,39 @@ day02--语言元素
 # print('圆的面积是%.1f' % area)
 
 # ex3: 判断是否是闰年
-year = int(input('请输入年份：'))
-is_leap = (year % 4 == 0 and year % 100 != 0 or year % 400 == 0)
-print(is_leap)
+# year = int(input('请输入年份：'))
+# is_leap = (year % 4 == 0 and year % 100 != 0 or year % 400 == 0)
+# print(is_leap)
 
+"""
+day03--分支结构
+"""
+# 用户身份验证
+# username = input('请输入用户名：')
+# password = input('请输入密码：')
+# if username == 'admin' and password == '123456':
+#     print('身份验证成功')
+# else:
+#     print('身份验证失败')
+
+# 分段函数求值
+# x = float(input('x = '))
+# if x > 1:
+#     y = 3 * x - 5
+# elif x >= -1:
+#     y = x + 2
+# else:
+#     y = 5 * x + 3
+# print('f(%.2f) = %.2f' % (x,y))
+
+# x = float(input('x = '))
+# if x > 1:
+#     y = 3 * x - 5
+# else:
+#     if x >= -1:
+#       y = x + 2
+#     else:
+#       y = 5 * x + 3
+# print('f(%.2f) = %.2f' % (x, y))
+
+# ex1:英寸和厘米转换
