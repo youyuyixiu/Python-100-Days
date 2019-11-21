@@ -169,3 +169,65 @@ day03--分支结构
 # else:
 #     print('不能构成三角形')
 
+"""
+day04--循环结构
+"""
+# # for循环实现1~100求和
+# sum = 0
+# for x in range(101):
+#     sum += x
+# print(sum)
+
+# # for循环实现1~100之间偶数求和
+# sum = 0
+# for x in range(2, 101, 2):
+#     sum += x
+# print(sum)
+
+# # for循环实现1~100之间偶数求和(循环套分支)
+# sum = 0
+# for x in range(2, 101):
+#     if x % 2 == 0:
+#         sum += x
+# print(sum)
+
+# # 猜数字
+# import random
+# answer = random.randint(1,100)
+# counter = 0
+# while True:
+#     counter += 1
+#     number = int(input('请输入：'))
+#     if number > answer:
+#         print('猜大了')
+#     elif number < answer:
+#         print('猜小了')
+#     else:
+#         print('猜对了')
+#         break  
+# print('您总共猜了%d次' % counter)
+# print('正确答案是%d' % answer)
+# if counter > 7:
+#     print('您的智商明显不足')
+
+# # 99乘法表
+# for i in range(1, 10):
+#     for j in range(1, i+1):
+#         print('%d*%d=%d' %(i, j, i*j), end='\t')
+#     print()
+
+# # ex1:判断一个正整数是不是素数
+# from math import sqrt
+# num = int(input('请输入正整数：'))
+# end = int(sqrt(num))
+# is_prime = True
+# for i in range(2, end + 1):
+#     if num % i == 0:
+#         is_prime = False
+#         break
+# if is_prime and num != 1:
+#     print('%d是素数' % num)
+# else:
+#     print('%d不是素数' % num)
+
+# ex2:求两个正整数的最大公约数和最小公倍数
