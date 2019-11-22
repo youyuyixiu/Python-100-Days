@@ -272,3 +272,31 @@ day04--循环结构
 #     for _ in range(2 * i + 1):
 #         print('*',end='')
 #     print()
+
+"""
+day05--构造程序逻辑
+"""
+
+# # 水仙花数
+# for i in range(100, 1000):
+#     low = i % 10
+#     mid = i // 10 % 10
+#     high = i // 100
+#     if (i == low ** 3 + mid ** 3 + high ** 3):
+#         print(i)
+
+# # 正整数的反转
+# num = int(input('num = '))
+# reverse_num = 0
+# while num > 0:
+#     reverse_num = reverse_num * 10 + num % 10
+#     num //= 10
+# print(reverse_num)
+
+# # 百钱百鸡(暴力搜索法)
+# for i in range(0, 20):
+#     for j in range(0, 33):
+#         k = 100 - i - j
+#         if i * 5 + j * 3 + k / 3 == 100:
+#             print('公鸡%d只，母鸡%d只，小鸡%d只' % (i, j, k))
+
