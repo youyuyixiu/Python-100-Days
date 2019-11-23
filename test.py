@@ -368,3 +368,86 @@ day05--构造程序逻辑
 """
 day06--函数和模块
 """
+# # 计算C(M,N)
+# import math
+# m = int(input('m= '))
+# n = int(input('n= '))
+# fm = 1
+# for num in range(1,m+1):
+#     fm *= num
+# fn = 1
+# for num in range(1,n+1):
+#     fn *= num
+# fmn = 1
+# for num in range(1,m-n+1):
+#     fmn *= num
+# print(fm // fn // fmn)
+
+# 函数计算C(M,N)
+# def factorial(num):
+#     result = 1
+#     for n in range(1, num+1):
+#         result *= n
+#     return result
+
+# m = int(input('m= '))
+# n = int(input('n= '))
+# print(factorial(m) // factorial(n) // factorial(m-n))
+
+# 函数参数
+# from random import randint
+# def roll_dice(n=2):
+#     total = 0
+#     for _ in range(n):
+#         total += randint(1,6)
+#     return total
+
+# def add(a=0, b=0, c=0):
+#     return a + b + c
+
+# print(roll_dice())
+# print(roll_dice(3))
+# print(add())
+# print(add(1))
+# print(add(1, 2))
+# print(add(1, 2, 3))
+# print(add(c=3, b=2, a=1))
+
+# # 可变参数
+# def add(*args):
+#     total = 0
+#     for val in args:
+#         total += val
+#     return total
+
+# print(add())
+# print(add(1))
+# print(add(1, 2))
+# print(add(1, 2, 3))
+# print(add(1, 3, 5, 7, 9))
+
+# python没有函数重载，用module可以避免这种情况
+# def foo():
+#     print('hello')
+
+# def foo():
+#     print('goodbye')
+
+# foo()
+
+# def foo():
+#     pass
+
+# def bar():
+#     pass
+
+# # __name__是Python中一个隐含的变量它代表了模块的名字
+# # 只有被Python解释器直接执行的模块的名字才是__main__
+# # 导入module时 不会执行模块中if条件成立时的代码 因为模块的名字是module而不是__main__
+# if __name__ == '__main__':
+#     print('call foo()')
+#     foo()
+#     print('call bar()')
+#     bar()
+
+# ex1 函数：请最大公约数和最小公倍数
