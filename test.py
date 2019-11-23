@@ -450,4 +450,90 @@ day06--函数和模块
 #     print('call bar()')
 #     bar()
 
-# ex1 函数：请最大公约数和最小公倍数
+# # ex1: gcd lcm
+# def gcd(x, y):
+#     (x, y) = (y, x) if x > y else (x, y)
+#     for factor in range(x, 0, -1):
+#         if x % factor == 0 and y % factor == 0:
+#             return factor
+
+# def lcm(x, y):
+#     return x * y // gcd(x, y)
+
+# print(gcd(8, 12))
+# print(lcm(8, 12))
+
+# # ex2：palindrome
+# def is_palindrome(num):
+#     total = 0
+#     temp = num
+#     while temp > 0:
+#         total = total * 10 + temp % 10
+#         temp //= 10
+#     return total == num
+
+# # print(is_palindrome(12321))
+
+# # ex3: prime
+# def is_prime(num):
+#     for factor in range(2, num):
+#         if num % factor == 0:
+#             return False
+#     return True if num != 1 else False
+
+# # print(is_prime(3))
+
+# ex4:回文素数
+# if __name__ == '__main__':
+#     num = int(input('请输入正整数：'))
+#     if is_prime(num) and is_palindrome(num):
+#         print('%d是回文素数' % num)
+#     else:
+#         print('%d不是回文素数' % num)
+
+# # 全局变量
+# def foo():
+#     b = 'hello'
+
+#     def bar():
+#         c = True
+#         print(a)
+#         print(b)
+#         print(c)
+    
+#     bar()       
+
+# if __name__ == '__main__':
+#     a = 100
+#     foo()
+
+# # 注意局部变量a和全局变量a的不同
+# def foo():
+#     a = 200
+#     print(a)
+
+# if __name__ == '__main__':
+#     a = 100
+#     foo()
+#     print(a)
+
+# global
+# def foo():
+#     global a
+#     a = 200
+#     print(a)
+
+# if __name__ == '__main__':
+#     a = 100
+#     foo()
+#     print(a)
+
+# def main():
+#     pass
+
+# if __name__ == '__main__':
+#     main()
+
+"""
+day07--字符串和常用的数据结构
+"""
