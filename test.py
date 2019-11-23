@@ -537,3 +537,63 @@ day06--函数和模块
 """
 day07--字符串和常用的数据结构
 """
+# s1 = 'hello world'
+# s2 = "hello world"
+# s3 = """
+# hello world
+# hello python
+# """
+# print(s1, s2, s3, end='')
+
+# s1 = '\'hello world\''
+# s2 = '\n\\hello world\\\n'
+# print(s1, s2, end='')
+
+# s1 = '\141\142\143\x61\x62\x63'
+# s2 = '\u9a86\u660a'
+# print(s1, s2)
+
+# s1 = r'\'hello world\''
+# s2 = r'\n\\hello world\\\n'
+# print(s1, s2, end='')
+
+# s1 = 'hello' * 3
+# print(s1)
+# s2 = 'world'
+# s1 += s2
+# print(s1)
+# print('ll' in s1)
+# print('good' in s1)
+# str = 'abc123456'
+# print(str[2])
+# print(str[2:5])
+# print(str[2::2])
+# print(str[::2])
+# print(str[::-1])
+# print(str[-3:-1])
+
+# str = 'hello, world'
+# print(len(str))
+# print(str.capitalize())
+# print(str.title())
+# print(str.find('or'))
+# print(str.find('shit'))
+# print(str.index('or'))
+# # print(str.index('shit'))
+# print(str.startswith('He'))
+# print(str.startswith('he'))
+# print(str.endswith('ld'))
+# print(str.center(50, '*'))
+# print(str.rjust(50, ' '))
+# print(str.isdigit())
+# print(str.isalpha())
+# print(str.isalnum())
+# str2 = '  xiaoshuyi123@163.com  '
+# print(str2.strip())
+
+# a, b = 1, 2
+# print('%d * %d = %d' % (a, b, a*b))
+# print('{0} * {1} = {2}'.format(a, b, a*b))
+# print(f'{a} * {b} = {a * b}')
+
+# list
