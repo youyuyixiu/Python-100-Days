@@ -56,5 +56,57 @@
 #     print()
 
 """
-输入一个正整数判断它是不是素数
+ex1 输入一个正整数判断它是不是素数
 """
+# from math import sqrt
+# num = int(input('请输入正整数：'))
+# is_prime = True
+# end = int(sqrt(num))
+# print(end)
+# for i in range(2, end+1):
+#     if num % i == 0:
+#         is_prime = False
+#         break
+# if is_prime == True and num != 1:
+#     print('%d是素数' % (num))
+# else:
+#     print('%d不是素数' % (num))
+
+"""
+ex2 输入两个正整数计算它们的最大公约数和最小公倍数
+"""
+# x = int(input('请输入正整数：'))
+# y = int(input('请输入正整数：'))
+# if x > y:
+#     x, y = y, x
+# for i in range(x, 0, -1):
+#     if x % i == 0 and y % i == 0:
+#         print('最大公约数为%d' % i)
+#         print('最小公倍数为%d' % (x*y//i))
+#         break
+
+"""
+ex3 打印三角形图案
+"""
+# row = int(input('请输入行数：'))
+# for i in range(row):
+#     for j in range(i+1):
+#         print('*',end='')
+#     print()
+
+# row = int(input('请输入行数：'))
+# for i in range(row):
+#     for j in range(row):
+#         if j < row - i - 1:
+#             print(' ', end='')
+#         else:
+#             print('*', end='')
+#     print()
+
+row = int(input('请输入行数：'))
+for i in range(row):
+    for j in range(row - i -1):
+        print(' ', end='')
+    for j in range(2 * i + 1):
+        print('*', end='')
+    print()
